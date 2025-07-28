@@ -1,0 +1,212 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Base font size */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.link {
+    color: brown;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: red;
+    background-color: aqua;
+}
+
+.content {
+    padding: 20px;
+}
+.navbar2 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+
+}
+.navbar2 a:hover,
+.navbar2 a.active{
+    color: white;
+    border-bottom: 3px solid orangered;
+}
+.navbar2{
+    background-color: rgb(125, 106, 106);
+    backdrop-filter: blue(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 88%;
+    padding: 35px 6%;
+    top: 0;
+    left: 0;
+}
+span{
+    color:orangered;
+}
+span:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+    transform: scale(1.1);
+}
+.span{
+    font-size: xx-large;
+    color: white;
+    font-weight: 800;
+    transition: 0.3s ease;
+}
+.span:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+    0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    box-shadow: 0 0 50px orangered;
+    color: white;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 44%; }
+  }
+  .typing-text {
+    font-family: monospace;
+    overflow: hidden;
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 0;
+    animation: typing 4s steps(30, end) 1s forwards;
+  }
+.typing-text2{
+    color: aqua;
+}
+
+
+  
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .link {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+    }
+
+    .navbar2 {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px 4%;
+    }
+
+    .navbar2 a {
+        margin: 10px 0;
+        font-size: 16px;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+
+    .span {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 10px 0 0 0;
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .typing-text {
+        font-size: large;
+        width: 100%;
+        animation: typing 3s steps(20, end) 1s forwards;
+    }
+    .typing-text2 {
+        font-size: medium;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar, .navbar2 {
+        padding: 8px 2%;
+    }
+
+    .span {
+        font-size: large;
+    }
+
+    .typing-text {
+        font-size: 1rem;
+    }
+    .typing-text2 {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,130 @@
+.home{
+    width: 75%;
+    min-height: 100vh;
+    background: rgb(187, 104, 187);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid  black;
+
+}
+.btn2 {
+    padding: 15px 28px;
+    background-color: greenyellow;
+    color: rgb(102, 0, 255);
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: white;
+    color: orangered;
+}
+.img-box img{
+    border-radius: 35%;
+    width: 550px;
+}
+
+
+@media (max-width: 900px) {
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2em;
+        width: 100%;
+        padding: 20px 4% 0;
+    }
+    .img-box img {
+        width: 90vw;
+        max-width: 350px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+    .home-content {
+        max-width: 100%;
+    }
+    .btn-box {
+        width: 100%;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5em;
+        width: 100vw;
+        min-height: unset;
+        padding: 10px 2vw 0;
+    }
+    .home-content h3 {
+        font-size: 1.3rem;
+    }
+    .home-content h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+    .home-content p {
+        font-size: 1rem;
+        margin: 15px 0 20px;
+    }
+    .btn-box {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.7em;
+    }
+    .btn1, .btn2 {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    .img-box img {
+        width: 95vw;
+        max-width: 250px;
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+}
