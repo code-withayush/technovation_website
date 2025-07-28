@@ -6,7 +6,9 @@
    font-weight: bolder;
     /* color:  #FFEB55; */
 }
-
+.khushi p {
+    color: black !important;
+}
 .slideshow-k {
     position: relative;
     width: 218vh;
